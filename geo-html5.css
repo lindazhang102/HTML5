@@ -4,7 +4,6 @@ body {
 	background-color:#CCCCCC;
 	font-family:Geneva,Arial,Helvetica,sans-serif;
 	margin: 0px auto;
-	max-width:900px;
 	border:solid;
 	border-color:#FFFFFF;
 }
@@ -115,7 +114,7 @@ article footer {
 article h1 {
 	font-size: 18px;
 }
-	
+
 aside {
 	display:block;
 	width:25%;
@@ -133,10 +132,10 @@ aside p {
 	font-weight: bold;
 	font-style: italic;
 }
-	
+
 
 footer {
-	clear: both;	
+	clear: both;
 	display: block;
 	background-color: #F47D31;
 	color:#FFFFFF;
@@ -153,7 +152,7 @@ footer h2 {
 	border-radius: 10px;
 	border:solid 2px #F47D31;
 	padding: 5px;
-	
+
 }
 
 .geostatus p:hover {
