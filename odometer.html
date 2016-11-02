@@ -10,41 +10,40 @@
 <body onload="loadDemo()">
 
   <header>
-    <h1>Odometer Demo</h1>
-    <h4>Live Race Data!</h4>
+    <h1>HTML5 计步器</h1>
   </header>
 
   <div id="container">
-  
+
   <section>
     <article>
       <header>
-        <h1>Your Location</h1>
+        <h1>当前位置：</h1>
       </header>
-      
+
         <p class="info" id="status">Geolocation is not supported in your browser.</p>
-      
+
       <div class="geostatus">
-        <p id="latitude">Latitude: </p>
-        <p id="longitude">Longitude: </p>
-        <p id="accuracy">Accuracy: </p>
-        <p id="timestamp">Timestamp: </p>
-        <p id="currDist">Current distance traveled: </p>
-        <p id="totalDist">Total distance traveled: </p>
+        <p id="latitude">纬度: </p>
+        <p id="longitude">经度: </p>
+        <p id="accuracy">精确值: </p>
+        <p id="timestamp">时间戳: </p>
+        <p id="currDist">当前行走距离: </p>
+        <p id="totalDist">总共行走距离: </p>
       </div>
-      
+
     </article>
   </section>
 
-     
+
   <footer>
-    <h2>Powered by HTML5, and your feet!</h2>
+    <h2>管住嘴，迈开腿，你不瘦谁瘦！Come on!</h2>
   </footer>
-  
+
   </div>
-   
+
   <script>
-  
+
     var totalDistance = 0.0;
     var lastLat;
     var lastLong;
@@ -75,7 +74,7 @@
     }
 
     function updateErrorStatus(message) {
-      document.getElementById("status").style.background = "papayaWhip";	
+      document.getElementById("status").style.background = "papayaWhip";
       document.getElementById("status").innerHTML = "<strong>Error</strong>: " + message;
     }
 
@@ -85,7 +84,7 @@
     }
 
     function loadDemo() {
-  
+
     if(navigator.geolocation) {
         document.getElementById("status").innerHTML = "HTML5 Geolocation is supported in your browser.";
         navigator.geolocation.watchPosition(updateLocation, handleLocationError,
@@ -116,11 +115,11 @@
       if ((lastLat != null) && (lastLong != null)) {
         var currentDistance = distance(latitude, longitude, lastLat, lastLong);
 
-        document.getElementById("currDist").innerHTML = 
+        document.getElementById("currDist").innerHTML =
                  "Current distance traveled: " + currentDistance.toFixed(2) + " km";
 
         totalDistance += currentDistance;
-        document.getElementById("totalDist").innerHTML = 
+        document.getElementById("totalDist").innerHTML =
                  "Total distance traveled: " + currentDistance.toFixed(2) + " km";
         updateStatus("Location successfully updated.");
 
