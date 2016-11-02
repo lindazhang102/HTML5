@@ -144,7 +144,7 @@ footer {
 }
 
 footer h2 {
-	font-size: 14px;
+	font-size: 2em;
 	color: white;
 }
 
@@ -154,7 +154,9 @@ footer h2 {
 	padding: 5px;
 
 }
-
+.geostatus p{
+	font-size: 1.5em;
+}
 .geostatus p:hover {
 	color: white;
 	background-color: #F47D31;

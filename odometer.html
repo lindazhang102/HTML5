@@ -99,10 +99,10 @@
       var accuracy = position.coords.accuracy;
       var timestamp = position.timestamp;
 
-      document.getElementById("latitude").innerHTML = "Latitude: " + latitude;
-      document.getElementById("longitude").innerHTML = "Longitude: " +  longitude;
-      document.getElementById("accuracy").innerHTML = "Accuracy: " + accuracy + " meters";
-      document.getElementById("timestamp").innerHTML = "Timestamp: " + timestamp;
+      document.getElementById("latitude").innerHTML = "纬度: " + latitude;
+      document.getElementById("longitude").innerHTML = "精度: " +  longitude;
+      document.getElementById("accuracy").innerHTML = "精确值: " + accuracy + " meters";
+      document.getElementById("timestamp").innerHTML = "时间戳: " + timestamp;
 
       // sanity test... don't calculate distance if accuracy
       // value too large
