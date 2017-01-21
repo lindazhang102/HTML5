@@ -1,0 +1,42 @@
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.container h1{
+    padding-bottom: 10px;
+    border-bottom:1px dashed #b69f19;
+}
+.personal_des,
+.personal_edu,
+.personal_exp,
+.personal_blog,
+.personal_con{
+    margin-bottom: 50px;
+}
+.personal_bao{
+    margin-bottom: 40px;
+}
+.personal_exp ul,
+.personal_blog ul,
+.personal_con ul{
+    padding: 0;
+}
+.personal_exp ul li,
+.personal_blog ul li,
+.personal_con ul li{
+    list-style-type: none;
+}
+a{
+    color: #1dba89;
+    cursor: pointer;
+    text-decoration:none;
+    word-wrap:break-word;
+}
+.personal_des p,
+.personal_bao p,
+.personal_edu p,
+.personal_exp ul li,
+.personal_blog ul li,
+.personal_con ul li{
+    line-height: 1.5;
+}
